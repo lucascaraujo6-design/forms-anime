@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de animes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/post.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de animes</h1>
+      <p>Preencha os dados abaixo!!!</p>
+    </header>
+    <main>
+      <section>
+        <p><a href="../pages/get.html">Consultar animes</a></p>
+        <h2>Novo anime</h2>
+
+        <form id="form-anime">
+          <label for="title">Nome do anime: </label>
+          <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+          <label for="genero">Gênero: </label>
+          <input id="genero" name="genero" type="text" required />
+
+          <label for="episodios">episódios: </label>
+          <input id="episodios" name="episodios" type="number" required />
+
+          <label for="lançamento">Lançamento: </label>
+          <input id="lançamento" name="lançamento" type="date" required />
+
+          <label for="imageUrl">URL da imagem (opcional): </label>
+          <input id="imageUrl" name="imageUrl" type="url" />
+
+          <button type="submit">Cadastrar anime</button>
+        </form>
+
+        <p id="resposta"></p>
+      </section>
+    </main>
+  </body>
+</html>
